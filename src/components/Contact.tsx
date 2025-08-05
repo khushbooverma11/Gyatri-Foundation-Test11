@@ -9,18 +9,20 @@ import {
   Phone, 
   Send 
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Get In Touch
+            {t("contact.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Ready to start your child's journey toward academic excellence? Contact us today for admission details 
-            or schedule a visit to our institute.
+            {t("contact.subtitle")}
           </p>
         </div>
 

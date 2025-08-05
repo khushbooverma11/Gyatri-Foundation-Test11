@@ -2,8 +2,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BookOpen, Clock, Star, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Courses = () => {
+  const { t } = useTranslation();
+  
   const courses = [
     {
       title: "Class 6-8 Foundation",
@@ -56,11 +59,10 @@ const Courses = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Courses
+            {t("courses.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Choose from our carefully designed courses that cater to different academic needs and goals. 
-            Each program is crafted to ensure maximum learning outcomes.
+            {t("courses.subtitle")}
           </p>
         </div>
 

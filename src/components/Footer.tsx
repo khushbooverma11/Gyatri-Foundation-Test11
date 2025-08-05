@@ -1,6 +1,9 @@
 import { GraduationCap, Mail, MapPin, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-foreground text-background py-12">
       <div className="container mx-auto px-4">
@@ -14,8 +17,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">Gyatri Foundation</span>
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
-              Empowering students to achieve academic excellence through quality education, 
-              dedicated faculty, and proven teaching methodologies.
+              {t("footer.description")}
             </p>
           </div>
 

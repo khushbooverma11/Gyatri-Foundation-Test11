@@ -1,0 +1,172 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "courses": "Courses",
+    "whyChooseUs": "Why Choose Us",
+    "contact": "Contact",
+    "enrollNow": "Enroll Now"
+  },
+  "hero": {
+    "title": "Unlock Your Child's",
+    "titleHighlight": "Academic Potential",
+    "subtitle": "Expert coaching for Classes 6-10 and specialized Jawahar Navodaya Vidyalaya entrance preparation. Build a strong foundation for lifelong success.",
+    "students": "Students",
+    "successRate": "Success Rate",
+    "yearsExperience": "Years Experience",
+    "startJourney": "Start Your Journey",
+    "learnMore": "Learn More",
+    "jnvEntrance": "JNV Entrance",
+    "specializedCoaching": "Specialized Coaching"
+  },
+  "about": {
+    "title": "About Gyatri Foundation",
+    "subtitle": "Founded with a vision to nurture young minds, Gyatri Foundation has been a beacon of quality education, helping students achieve their academic dreams for over 8 years.",
+    "empowering": "Empowering Students Since 2016",
+    "description1": "At Gyatri Foundation, we believe that every child has the potential to excel. Our dedicated team of experienced educators works tirelessly to provide comprehensive coaching for students from Classes 6 to 10.",
+    "description2": "We specialize in preparing students for the prestigious Jawahar Navodaya Vidyalaya entrance examination, with a proven track record of success that speaks for itself.",
+    "description3": "Our approach combines traditional teaching values with modern educational techniques, ensuring that students not only excel academically but also develop as well-rounded individuals.",
+    "mission": "Our Mission",
+    "missionText": "To provide quality education that empowers students to achieve their dreams and contribute meaningfully to society.",
+    "values": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for academic excellence in every student we teach"
+      },
+      "care": {
+        "title": "Care",
+        "description": "Individual attention and care for each student's unique needs"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Modern teaching methods combined with traditional values"
+      },
+      "success": {
+        "title": "Success",
+        "description": "Proven track record of student success and achievements"
+      }
+    },
+    "stats": {
+      "studentsEnrolled": "Students Enrolled",
+      "successRate": "Success Rate",
+      "yearsExcellence": "Years of Excellence",
+      "expertFaculty": "Expert Faculty"
+    }
+  },
+  "courses": {
+    "title": "Our Courses",
+    "subtitle": "Comprehensive programs designed to help students excel in their academic journey",
+    "foundation": {
+      "title": "Foundation Course (Class 6-8)",
+      "description": "Strong foundation building with concept clarity",
+      "features": [
+        "Basic concept building",
+        "Interactive learning",
+        "Regular assessments",
+        "Doubt clearing sessions"
+      ]
+    },
+    "advanced": {
+      "title": "Advanced Course (Class 9-10)",
+      "description": "Advanced level preparation for board exams",
+      "features": [
+        "Board exam preparation",
+        "Advanced problem solving",
+        "Mock tests",
+        "Performance analysis"
+      ]
+    },
+    "jnv": {
+      "title": "JNV Entrance Preparation",
+      "description": "Specialized coaching for Jawahar Navodaya Vidyalaya entrance",
+      "features": [
+        "Entrance exam pattern",
+        "Mental ability training",
+        "Language skills",
+        "Practice tests"
+      ]
+    },
+    "individual": {
+      "title": "Individual Coaching",
+      "description": "Personalized one-on-one coaching sessions",
+      "features": [
+        "Customized learning plan",
+        "Flexible timings",
+        "Personal attention",
+        "Faster progress"
+      ]
+    },
+    "enrollNow": "Enroll Now"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Gyatri Foundation?",
+    "subtitle": "We are committed to providing the best educational experience for your child",
+    "experienced": {
+      "title": "Experienced Faculty",
+      "description": "Our team consists of highly qualified and experienced teachers"
+    },
+    "proven": {
+      "title": "Proven Track Record",
+      "description": "95% success rate in JNV entrance and board examinations"
+    },
+    "personalized": {
+      "title": "Personalized Attention",
+      "description": "Small batch sizes ensure individual attention to each student"
+    },
+    "modern": {
+      "title": "Modern Teaching Methods",
+      "description": "Interactive and technology-enhanced learning experience"
+    },
+    "affordable": {
+      "title": "Affordable Fees",
+      "description": "Quality education at reasonable and affordable fee structure"
+    },
+    "support": {
+      "title": "Comprehensive Support",
+      "description": "Complete academic support including doubt clearing and counseling"
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to start your child's journey to academic excellence? Contact us today!",
+    "info": {
+      "title": "Contact Information",
+      "address": "123 Education Street, Knowledge Colony, City Center",
+      "phone": "+91 98765 43210",
+      "email": "info@gyatrifoundation.com",
+      "hours": "Office Hours",
+      "timings": "Monday - Saturday: 9:00 AM - 6:00 PM"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "course": "Course Interest",
+      "message": "Message",
+      "submit": "Send Message",
+      "selectCourse": "Select a course"
+    },
+    "courseOptions": {
+      "foundation": "Foundation Course (Class 6-8)",
+      "advanced": "Advanced Course (Class 9-10)",
+      "jnv": "JNV Entrance Preparation",
+      "individual": "Individual Coaching"
+    }
+  },
+  "footer": {
+    "description": "Empowering students to achieve academic excellence through quality education, dedicated faculty, and proven teaching methodologies.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "courses": "Courses",
+    "contact": "Contact",
+    "ourCourses": "Our Courses",
+    "contactInfo": "Contact Info",
+    "address": "123 Education Street, Knowledge Colony, City Center",
+    "phone": "+91 98765 43210",
+    "email": "info@gyatrifoundation.com",
+    "copyright": "© 2024 Gyatri Foundation. All rights reserved.",
+    "designed": "Designed with ❤️ for education excellence"
+  }
+}

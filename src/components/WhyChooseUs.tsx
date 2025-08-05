@@ -9,8 +9,11 @@ import {
   Star, 
   Target 
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation();
+  
   const reasons = [
     {
       icon: GraduationCap,

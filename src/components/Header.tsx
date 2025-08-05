@@ -1,16 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Courses", href: "#courses" },
-    { name: "Why Choose Us", href: "#why-us" },
-    { name: "Contact", href: "#contact" },
+    { name: t("nav.home"), href: "#home" },
+    { name: t("nav.about"), href: "#about" },
+    { name: t("nav.courses"), href: "#courses" },
+    { name: t("nav.whyChooseUs"), href: "#why-us" },
+    { name: t("nav.contact"), href: "#contact" },
   ];
 
   return (
@@ -40,10 +43,11 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Language Switcher & CTA Button */}
+          <div className="hidden md:flex items-center space-x-3">
+            <LanguageSwitcher />
             <Button className="bg-education-orange hover:bg-education-orange/90">
-              Enroll Now
+              {t("nav.enrollNow")}
             </Button>
           </div>
 
@@ -72,9 +76,12 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-education-orange hover:bg-education-orange/90 mt-4">
-                Enroll Now
-              </Button>
+              <div className="flex flex-col space-y-3 mt-4">
+                <LanguageSwitcher />
+                <Button className="bg-education-orange hover:bg-education-orange/90">
+                  {t("nav.enrollNow")}
+                </Button>
+              </div>
             </div>
           </nav>
         )}
