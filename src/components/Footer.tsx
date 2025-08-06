@@ -66,12 +66,12 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="w-4 h-4 text-background/80 mt-0.5 flex-shrink-0" />
                 <span className="text-background/80">
-                  123 Education Street, Knowledge Colony, City Center
+                  Pipiganj, Dist- Gorakhpur, PIN Code- 273165
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-background/80 flex-shrink-0" />
-                <span className="text-background/80">+91 98765 43210</span>
+                <span className="text-background/80">+91 9677565236</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-background/80 flex-shrink-0" />
@@ -88,7 +88,7 @@ const Footer = () => {
               © 2024 Gyatri Foundation. All rights reserved.
             </p>
             <p className="text-background/80 text-sm">
-              Designed with ❤️ for education excellence
+              Designed with Gayatri Tech Team for education excellence
             </p>
           </div>
         </div>
