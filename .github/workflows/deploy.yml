@@ -1,5 +1,4 @@
-
-# .github/workflows/deploy.yml
+# This is the only workflow file you need for deployment.
 
 name: Build and Deploy to GitHub Pages
 
@@ -31,28 +30,21 @@ jobs:
         run: npm ci
 
       - name: Build your project
-        # This runs the "build" script from your package.json
-        # and uses the conditional base path from vite.config.ts
         run: npm run build
 
       - name: Upload the build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Vite builds to the 'dist' folder by default
-          path: './dist'
+          path: './dist' # Vite builds to the 'dist' folder
 
   deploy:
-    # This job requires the build job to have succeeded
     needs: build
-    
-    # Deploy to the github-pages environment
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      
-    # Specify runner + permissions
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
