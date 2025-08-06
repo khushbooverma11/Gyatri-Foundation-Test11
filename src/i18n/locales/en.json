@@ -20,10 +20,10 @@
     "specializedCoaching": "Specialized Coaching"
   },
   "about": {
-    "title": "About Gyatri Foundation",
-    "subtitle": "Founded with a vision to nurture young minds, Gyatri Foundation has been a beacon of quality education, helping students achieve their academic dreams for over 8 years.",
+    "title": "About Gayatri Foundation",
+    "subtitle": "Founded with a vision to nurture young minds, Gayatri Foundation has been a beacon of quality education, helping students achieve their academic dreams for over 8 years.",
     "empowering": "Empowering Students Since 2016",
-    "description1": "At Gyatri Foundation, we believe that every child has the potential to excel. Our dedicated team of experienced educators works tirelessly to provide comprehensive coaching for students from Classes 6 to 10.",
+    "description1": "At Gayatri Foundation, we believe that every child has the potential to excel. Our dedicated team of experienced educators works tirelessly to provide comprehensive coaching for students from Classes 6 to 10.",
     "description2": "We specialize in preparing students for the prestigious Jawahar Navodaya Vidyalaya entrance examination, with a proven track record of success that speaks for itself.",
     "description3": "Our approach combines traditional teaching values with modern educational techniques, ensuring that students not only excel academically but also develop as well-rounded individuals.",
     "mission": "Our Mission",
@@ -99,7 +99,7 @@
     "enrollNow": "Enroll Now"
   },
   "whyChooseUs": {
-    "title": "Why Choose Gyatri Foundation?",
+    "title": "Why Choose Gayatri Foundation?",
     "subtitle": "We are committed to providing the best educational experience for your child",
     "experienced": {
       "title": "Experienced Faculty",
@@ -133,7 +133,7 @@
       "title": "Contact Information",
       "address": "123 Education Street, Knowledge Colony, City Center",
       "phone": "+91 98765 43210",
-      "email": "info@gyatrifoundation.com",
+      "email": "info@Gayatrifoundation.com",
       "hours": "Office Hours",
       "timings": "Monday - Saturday: 9:00 AM - 6:00 PM"
     },
@@ -165,8 +165,8 @@
     "contactInfo": "Contact Info",
     "address": "123 Education Street, Knowledge Colony, City Center",
     "phone": "+91 98765 43210",
-    "email": "info@gyatrifoundation.com",
-    "copyright": "© 2024 Gyatri Foundation. All rights reserved.",
+    "email": "info@Gayatrifoundation.com",
+    "copyright": "© 2024 Gayatri Foundation. All rights reserved.",
     "designed": "Designed with ❤️ for education excellence"
   }
 }

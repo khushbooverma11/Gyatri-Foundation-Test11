@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-lg">
                 <GraduationCap className="w-6 h-6 text-primary-foreground" />
               </div>
-              <span className="text-2xl font-bold">Gyatri Foundation</span>
+              <span className="text-2xl font-bold">Gayatri Foundation</span>
             </div>
             <p className="text-background/80 text-sm leading-relaxed">
               {t("footer.description")}
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-background/80 flex-shrink-0" />
-                <span className="text-background/80">info@gyatrifoundation.com</span>
+                <span className="text-background/80">info@Gayatrifoundation.com</span>
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="border-t border-background/20 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-background/80 text-sm">
-              © 2024 Gyatri Foundation. All rights reserved.
+              © 2024 Gayatri Foundation. All rights reserved.
             </p>
             <p className="text-background/80 text-sm">
               Designed with ❤️ for education excellence

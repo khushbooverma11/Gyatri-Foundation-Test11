@@ -62,7 +62,7 @@ const WhyChooseUs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Why Choose Gyatri Foundation?
+            Why Choose Gayatri Foundation?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We go beyond traditional teaching methods to create an environment where students thrive, 
@@ -97,14 +97,14 @@ const WhyChooseUs = () => {
               <div className="space-y-6">
                 <div className="border-l-4 border-primary pl-6">
                   <p className="text-muted-foreground italic mb-2">
-                    "Thanks to Gyatri Foundation, I cleared JNV entrance in my first attempt. 
+                    "Thanks to Gayatri Foundation, I cleared JNV entrance in my first attempt. 
                     The teachers were supportive and the study material was excellent."
                   </p>
                   <p className="font-semibold text-foreground">- Priya Sharma, JNV Selected 2023</p>
                 </div>
                 <div className="border-l-4 border-secondary pl-6">
                   <p className="text-muted-foreground italic mb-2">
-                    "My son's confidence and grades improved significantly after joining Gyatri Foundation. 
+                    "My son's confidence and grades improved significantly after joining Gayatri Foundation. 
                     The individual attention made all the difference."
                   </p>
                   <p className="font-semibold text-foreground">- Mrs. Rekha Patel, Parent</p>

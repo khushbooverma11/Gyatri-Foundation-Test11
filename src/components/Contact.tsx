@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { 
@@ -9,11 +9,54 @@ import {
   Phone, 
   Send 
 } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation();
-  
+  const [formData, setFormData] = useState({
+    studentName: '',
+    parentName: '',
+    phone: '',
+    email: '',
+    course: '',
+    message: '',
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [formResponse, setFormResponse] = useState<{type: 'success' | 'error', message: string} | null>(null);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async () => {
+    setIsLoading(true);
+    setFormResponse(null);
+
+    try {
+      const response = await fetch('http://localhost:8085/api/response', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({ message: 'An unknown server error occurred.' }));
+        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+      }
+
+      setFormResponse({ type: 'success', message: 'Message sent successfully! We will get back to you soon.' });
+      setFormData({ studentName: '', parentName: '', phone: '', email: '', course: '', message: '' });
+    } catch (error: any) {
+      setFormResponse({ type: 'error', message: error.message || 'Failed to send message. Please try again later.' });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -67,8 +110,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email</h4>
                     <p className="text-muted-foreground">
-                      info@gyatrifoundation.com<br />
-                      admissions@gyatrifoundation.com
+                      info@Gayatrifoundation.com<br />
+                      admissions@Gayatrifoundation.com
                     </p>
                   </div>
                 </div>
@@ -120,18 +163,28 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Student Name
                   </label>
-                  <Input 
+                  <Input
+                    name="studentName"
+                    value={formData.studentName}
+                    onChange={handleInputChange}
+                    disabled={isLoading}
                     placeholder="Enter student name"
                     className="border-border"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Parent Name
                   </label>
-                  <Input 
+                  <Input
+                    name="parentName"
+                    value={formData.parentName}
+                    onChange={handleInputChange}
+                    disabled={isLoading}
                     placeholder="Enter parent name"
                     className="border-border"
+                    required
                   />
                 </div>
               </div>
@@ -141,20 +194,30 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Phone Number
                   </label>
-                  <Input 
+                  <Input
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    disabled={isLoading}
                     placeholder="Enter phone number"
                     type="tel"
                     className="border-border"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Email Address
                   </label>
-                  <Input 
+                  <Input
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    disabled={isLoading}
                     placeholder="Enter email address"
                     type="email"
                     className="border-border"
+                    required
                   />
                 </div>
               </div>
@@ -163,7 +226,11 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Class/Course of Interest
                 </label>
-                <Input 
+                <Input
+                  name="course"
+                  value={formData.course}
+                  onChange={handleInputChange}
+                  disabled={isLoading}
                   placeholder="e.g., Class 8, JNV Preparation"
                   className="border-border"
                 />
@@ -173,15 +240,30 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Message
                 </label>
-                <Textarea 
+                <Textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  disabled={isLoading}
                   placeholder="Tell us about your requirements, questions, or any specific needs..."
                   className="min-h-[120px] border-border"
+                  required
                 />
               </div>
 
-              <Button className="w-full bg-primary hover:bg-primary/90 group">
-                Send Message
-                <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              {formResponse && (
+                <div className={`text-sm p-3 rounded-md ${formResponse.type === 'success' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                  {formResponse.message}
+                </div>
+              )}
+
+              <Button 
+                onClick={handleSubmit} 
+                disabled={isLoading} 
+                className="w-full bg-primary hover:bg-primary/90 group"
+              >
+                {isLoading ? 'Sending...' : 'Send Message'}
+                {!isLoading && <Send className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />}
               </Button>
             </CardContent>
           </Card>

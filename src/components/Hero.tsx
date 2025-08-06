@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Trophy, Users } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImage from "@/assets/hero-education.jpg";
+import HeroImageSlideshow from "./HeroImageSlideshow";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -74,17 +74,10 @@ const Hero = () => {
 
           {/* Right Content - Image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={heroImage}
-                alt="Students learning at Gyatri Foundation"
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
+            <HeroImageSlideshow />
             
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg border border-border">
+            {/* <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-lg border border-border">
               <div className="flex items-center space-x-4">
                 <div className="flex items-center justify-center w-12 h-12 bg-primary rounded-full">
                   <Trophy className="w-6 h-6 text-primary-foreground" />
@@ -94,7 +87,7 @@ const Hero = () => {
                   <div className="text-sm text-muted-foreground">{t("hero.specializedCoaching")}</div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
