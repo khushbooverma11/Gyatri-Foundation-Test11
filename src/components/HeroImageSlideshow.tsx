@@ -19,8 +19,8 @@ interface TeacherInfo {
 const teachers: TeacherInfo[] = [
   { image: image2, name: 'Er Khushboo verma', qualification: 'BTech in Computer Science from NIT Allahabad' },
   { image: image3, name: 'Er Sandeep Singh', qualification: 'BTech in Electronics and Communication from NIT Allahabad' },
-  { image: image4, name: 'Saurabh Singh', qualification: 'M.Tech in Computer Science' },
-  { image: image1, name: 'Dr. Anjali Sharma', qualification: 'Ph.D. in Mathematics' },
+  { image: image4, name: 'Saurabh Singh', qualification: 'MA in Geography DDU' },
+  { image: image1, name: 'Nootan Singh', qualification: 'Mcom from DDU' },
   
 ];
 
